@@ -1,0 +1,1549 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks!
+    -->
+
+    <!-- SEO -->
+    <title>WebSlides Keynote: Make a Keynote presentation using HTML</title>
+    <meta name="description" content="WebSlides is the easiest way to make HTML presentations. Just essential features, clean code, and lovely CSS.">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="static/css/svg-icons.css">
+
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/animate.min.css">
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/custom.css">
+
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="http://your-url.com/permalink"> <!-- EDIT -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Make a Keynote presentation using HTML"> <!-- EDIT -->
+    <meta property="og:description" content="WebSlides is the easiest way to make HTML presentations. 120+ free slides ready to use."> <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-01-04T17:32:14"> <!-- EDIT -->
+    <meta property="og:image" content="static/images/share-webslides.jpg" > <!-- EDIT -->
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@webslides"> <!-- EDIT -->
+    <meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
+    <meta name="twitter:title" content="Make a Keynote presentation using HTML"> <!-- EDIT -->
+    <meta name="twitter:description" content="WebSlides is the easiest way to make HTML presentations. 120+ free slides ready to use."> <!-- EDIT -->
+    <meta name="twitter:image" content="static/images/share-webslides.jpg"> <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="static/css/leaflet.css" />
+    <script src="static/js/leaflet.js"></script>
+    <script src="static/js/chart.js"></script>
+  </head>
+  <body>
+    <header role="banner" style="display: none;">
+      <nav role="navigation">
+        <p class="logo"><a href="../index.html" title="WebSlides">WebSlides</a></p>
+        <ul>
+          <li class="github">
+            <a rel="external" href="https://github.com/webslides/webslides" title="Github">
+              <svg class="fa-github">
+                <use xlink:href="#fa-github"></use>
+              </svg>
+              <em>WebSlides</em>
+            </a>
+          </li>
+          <li class="twitter">
+            <a rel="external" href="https://twitter.com/webslides" title="Twitter">
+              <svg class="fa-twitter">
+                <use xlink:href="#fa-twitter"></use>
+              </svg>
+              <em>@WebSlides</em>
+            </a>
+          </li>
+          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <article id="webslides">
+
+        <section class="bg-black">
+          <h2 class="callout-title aligncenter">Novel Spectroscopies for metallome analysis of trace element:</h2>
+          <h3 class="callout-subtitle aligncenter" >Hyperaccumulator plants</h3>
+          <h4 class="callout-subtitle aligncenter" style="padding-top: 50px;">PhD thesis by</h4>
+          <h2 class="callout-subtitle aligncenter" >Imam Purwadi</h2>
+        </section>
+
+        <section class="bg-black">
+          <div class="wrap">
+            <div class="content-left">
+
+              <h2>WHOIAM?<span style="font-size: 18px;">Click on markers</span></h2>
+              <div id="map"></div>
+            </div>
+            <!-- end .content-left -->
+            <div class="content-left">
+              <!-- Create divs for city info -->
+              <div class="city-info" id="enschede-info">
+                <h2>Enschede, Netherlands</h2>
+                <p>I spent almost two years in Enschede, Netherlands, where I completed my master's degree at<a  href="https://www.itc.nl/" target="_blank"> the ITC Faculty of Geo-Information Science and Earth Observation, University of Twente</a>. The title of my Master's thesis was <b><i><u>"The feasibility of targeting REEs in tailings using satellite remote sensing data: A case study of abandoned mine sites, in Bangka Island, Indonesia"</u> </i></b></p>
+              </div>
+              
+              <div class="city-info" id="palembang-info">
+                  <h2><a href="https://en.wikipedia.org/wiki/South_Sumatra" target="_blank">South Sumatra</a>, Indonesia</h2>
+                  <p>More than half of my life has been spent in <a href="https://en.wikipedia.org/wiki/South_Sumatra" target="_blank">South Sumatra</a>, Indonesia. I did my undergrad at the local public university and my undergrad thesis project was about using geostatisical analysis for mapping soil pH distribution in one of mine rehabilitation projects in Bangka Island, Indonesia.</p>
+              </div>
+              
+              <div class="city-info" id="brisbane-info">
+                  <h2>Brisbane, Australia</h2>
+                  <p>Currently, I am pursuing my PhD at <a href="https://smi.uq.edu.au/" target="_blank">the Sustainable Mineral Institute, University of Queensland</a>, Brisbane. 
+                  My research was focused on developing methods to identify metal(loid)s hyperaccumulating plants that can be used for <b><i><u>phytomining phytoextraction and phytoremediation</u></i></b>.
+                  </p>
+              </div>
+            </div>
+            <!-- end .content-left -->
+          </div>
+        </section>
+
+        <section class="bg-black">
+          <div class="wrap">
+              <ul class="flexblock steps">
+                <!-- li>a? Add blink = <ul class="flexblock steps blink">-->
+                <li>
+                  <h2>WHYIDO?<span style="font-size: 18px;">this research...</span></h2>
+
+                  <div id="bangkamap"></div>
+
+                </li>
+                <li>
+                  <h2>2012</h2>
+                  <p class="noMarginPadding">My first visit to the island.</p>
+                  <p class="noMarginPadding">I observed mining activities, but stumbled upon dead corals in metal drum barrels :(</p>
+                  <p class="noMarginPadding">Did you know, tin has been mined there since the early 18th century?</p>
+                  <p class="noMarginPadding">It wasn't until 2009 that proper mine rehabilitation regulations were issued.</p>
+                  <img src="static/asset_images/dredge.png" alt="Image Description">
+                </li>
+                <li>
+                  <h2>2014</h2>
+                  <p class="noMarginPadding">It was a turning point for me.</p>
+                  <p class="noMarginPadding">I wrote my first paper about the island, and it received recognition from The Association of Indonesian Mining Professionals.</p>
+                  <p class="noMarginPadding">This recognition confirmed and validated my decision to delve into the environmental aspects of Bangka Island.</p>
+                  <p class="noMarginPadding">By that time, tin resources had been depleted, but rumors spoke of precious metals in the tin tailings.</p>
+                  <p class="noMarginPadding">I couldn't help but wonder, where were these precious metals, and could we remine them while ensuring proper rehabilitation?</p>
+                </li>
+                <li>
+                  <h2>2018</h2>
+                  <p class="noMarginPadding">Exciting news!</p>
+                  <p class="noMarginPadding">It turns out the tailings do contain precious metals!</p>
+                  <p class="noMarginPadding">But the question arose: Could we mine them using traditional methods without deteriorating the environment?</p>
+                  <p class="noMarginPadding">I explored more environmentally friendly options, like agromining.</p>
+                  <p class="noMarginPadding">However, there was a challenge - no identified plants to do the job.</p>
+                </li>
+              </ul>
+            <!-- end .content-left -->
+          </div>
+        </section>
+
+        <section class="fullscreen">
+          <div class="card-50">
+            <figure>
+              <img src="static/asset_images/photo2.JPG" alt="Yosemite National Park">
+              <figcaption>
+                <a href="https://www.google.com/maps/place/Bangka+Island/@-2.3081392,105.2281727,8.8z/data=!4m6!3m5!1s0x2e22cd8cd3c9a1a3:0xd53781c1e885e217!8m2!3d-2.2884782!4d106.0640179!16zL20vMDJxenAz?entry=ttu" title="Tin tailings">
+                  <svg class="fa-camera">
+                    <use xlink:href="#fa-camera"></use>
+                  </svg>
+                  2017, one of many tin tailings in the island
+                </a>
+                <div class="box">
+                  <span class="tooltip">99% quartz
+                    1% valuable Rare Earth Elements
+                  </span>
+                  +
+                </div>
+              </figcaption>
+            </figure>
+            <div class="flex-content">
+              <h2>
+                What's next?
+              </h2>
+              <p>
+                Find hyperaccumulator plants! <br> Where to start? How to achieve?
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple aligncenter">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <h2>July 2019, PhD commenced</h2>
+            <h3><u><i>Literature review</i></u></h3>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-black">
+          <div class="wrap">
+            <h3>Reasons to find hyperaccumulators</h3>
+            <ul class="flexblock">
+              <li class ="imageinli">
+                <img src="static/asset_images/exploration.png" alt="Image Description" class="noMarginPadding" style="max-width: 50%;">
+                <p>Exploration becomes harder (Wood 2012)</p>
+              </li>
+              <li class ="imageinli">
+                <img src="static/asset_images/traditionalmining.png" alt="Image Description" class="noMarginPadding" style="max-width: 50%;">
+                <p>Mining contributes to 2.7% of the world CO<sub>2</sub> emission (Holmberg et al. 2017)</p>
+              </li>
+              <li class ="imageinli">
+                <img src="static/asset_images/endanger.png" alt="Image Description" class="noMarginPadding" style="max-width: 50%;">
+                <p>Mining endangers plant species (Whiting et al. 2010)</p>
+              </li>
+            </ul>
+            <h3>Benefits to find hyperaccumulators</h3>
+            <ul class="flexblock">
+              <li class ="imageinli">
+                <img src="static/asset_images/indicators.png" alt="Image Description" class="noMarginPadding" style="max-width: 50%;">
+                <p>Hyperaccumulator indicates metal rich soil (Brooks 1988)</p>
+              </li>
+              <li class ="imageinli">
+                <img src="static/asset_images/agromining.png" alt="Image Description" class="noMarginPadding" style="max-width: 50%;">
+                <p>Hyperaccumulators extract metals from soil (van der Ent et al. 2015) and store carbon in soil (Echevarria et al. 2016)</p>.
+              </li>
+              <li class ="imageinli">
+                <img src="static/asset_images/conservation.png" alt="Image Description" class="noMarginPadding" style="max-width: 50%;">
+                <p>Some hyperaccumulators become extinct and the remaining needs protection (Erskine et al. 2012)</p>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-black">
+          <div class="wrap">
+            <div class="content-left">
+              <h3>More background</h3>
+              <p class="noMarginPadding">> Hyperaccumulator coined for Pycnandra acuminata (Jaffré et al. 1976)</p>
+              <p class="noMarginPadding">> 721 identified hyperaccumulators (Reeves et al. 2017)</p>
+              <p class="noMarginPadding">> Hyperaccumulator thresholds:</p>
+              <p class="noMarginPadding">- 10,000 µg g<sup>-1</sup> for manganese,</p>
+              <p class="noMarginPadding">- 3000 µg g<sup>-1</sup> for zinc,</p>
+              <p class="noMarginPadding">- 1000 µg g<sup>-1</sup> for rare earth elements and arsenic,</p>
+              <p class="noMarginPadding">- 300 µg g<sup>-1</sup> for cobalt and copper,</p>
+              <p class="noMarginPadding">- 100 µg g<sup>-1</sup> selenium, cadmium, and thallium</p>
+              <p class="noMarginPadding">Source:(
+                <a href="https://www.researchgate.net/publication/247713966_Terrestrial_Higher_Plants_Which_Hyperaccumulate_Metallic_Elements_A_Review_of_Their_Distribution_E">Baker & Brooks, 1989</a>; 
+                <a href="https://link.springer.com/article/10.1023/A:1022572517197">Reeves, 2003b</a>;
+                <a href="https://link.springer.com/article/10.1007/s11104-012-1287-3">van der Ent et al., 2013).</a></p>
+            </div>
+            <div class="content-left">
+              <div>
+                <canvas id="hyperaccumulatorDatabaseChart"></canvas>
+              </div>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple aligncenter">
+          <div class="wrap">
+            <div class="aligncenter">
+              <h2>How?</h2>
+              <p class="noMarginPadding">74% of 721 identified hyperaccumulators are Nickel hyperaccumulator</p>
+              <div style="max-height: 350px;min-height: 300px; display: flex; justify-content: center;">
+                <canvas id="nihyperaccumulatorChart" style="min-height: 300px;"></canvas>
+              </div>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple aligncenter">
+          <div class="wrap zoomIn">
+            <p>
+              An easily prepared and deployed test for Ni hyperaccumulator detection exists!
+            </p>
+            <img src="static/asset_images/dmg.gif" alt="Image Description" class="noMarginPadding" style="width: 100vh;">
+          </div>
+          <!-- .end .wrap -->
+        </section>
+   
+        <section class="bg-apple">
+          <span class="background-right-bottom" style="background-image:url('static/asset_images/green_rock.png')"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="content-left">
+              <h2>Other reasons</h2>
+              <p>Tool is not the only reasons for the high number of identified Ni hyperaccumulator plants.</p>
+              <div class="content-left">
+                <h3>Soil concentrations</h3>
+                <p>Wide spread nickel rich soils as the weathering product of ultramafic rocks</p>
+              </div>
+              <!-- .end .content-left -->
+              <div class="content-left">
+                <h3>Economic value</h3>
+                <p>Nickel is in high demand, while supply is scarce</p>
+              </div>
+              <!-- .end .content-left -->
+            </div>
+            
+            <!-- .end .content-left -->
+          <figcaption style="position: absolute;right: 0;bottom: 0;">
+            <a href="https://www.freepik.com/free-photo/vertical-shot-malachite-mineral-isolated-white-background_14808648.htm#query=green%20rock&position=42&from_view=search&track=ais" title="Jonathan Körner">
+              <svg class="fa-camera">
+                <use xlink:href="#fa-camera"></use>
+              </svg>
+              wirestock (Feepik)
+            </a>
+          </figcaption>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple aligncenter">
+          <div class="wrap">
+            <div class="aligncenter">
+              <h4>"As metal prices rise with increased demand, hyperaccumulators are gaining recognition as an alternative means of extracting metals, and so is research in this field."</h4>
+              <p >While rare earth hyperaccumulators were discovered earlier than nickel hyperaccumulators, research progress in the former lags behind that of the latter</p>
+              <div style="max-height: 350px;min-height: 300px; display: flex; justify-content: center;">
+                <canvas id="rarennickelprice" style="min-height: 300px;"></canvas>
+              </div>
+              <p><a href="https://data.imf.org/?sk=471dddf8-d8a7-499a-81ba-5b332c01f8b9" title="WebSlides">source</a></p>
+
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple aligncenter">
+          <div class="wrap">
+            <div class="aligncenter">
+              <h4>A new approach was proposed to expedite the identification of hyperaccumulators</h4>
+              <p>Using a portable X-ray fluorescence instrument to scan herbarium specimens
+              </p>
+              <div class="content-left">
+                <img src="static/asset_images/xrf_herbarium.png" alt="Image Description" class="noMarginPadding" height="900">
+                <!-- <h3>Soil concentrations</h3>
+                <p>Wide spread nickel rich soils as the weathering product of ultramafic rocks</p> -->
+              </div>
+              <!-- .end .content-left -->
+              <div class="content-left">
+                <img src="static/asset_images/xrf_scanning.png" alt="Image Description" class="noMarginPadding" height="900">
+              </div>
+              <p>Rapid analysis, Non destructive screen, Abundance Sampling </p>
+
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple aligncenter">
+          <div class="wrap">
+              <h4>How does a portable X-ray fluorescence instrument work?</h4>
+              <p>The instrument shoots X-rays to hit the sample's atoms, and detectors catch any X-rays that come out</p>
+              <img src="static/asset_images/atomvsxray.gif" alt="Image Description" class="noMarginPadding" height="900" >
+              <p>The outgoing X-rays from each element are distinct and can be utilized for both quantitative and qualitative analysis</p>
+          </div>
+        </section>
+
+        <section class="bg-apple aligncenter">
+          <div class="wrap">
+            <div class="slide-top content-center" style="padding-top: 50px;">
+                <h5>The outgoing X-rays from each element are distinct and can be utilized for both quantitative and qualitative analysis</h5>
+                <canvas id="xrfpeakplot" width="400" height="200"></canvas>
+                <p class="noMarginPadding"> Each element spectrum was estimated using GeoPIXE. Click on legend to hide or show</p>
+            </div>
+            <div class="slide-bottom">
+              <!-- <embed src="static/asset_images/xrf_energy.pdf" width="100%" height="400px" style="padding-top: 50px;"/> -->
+              <a href="https://xdb.lbl.gov/Section1/Table_1-2.pdf">Source</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-black-blue aligncenter">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <p class="text-subtitle">Portable XRF Instruments</p>
+            <h1 class="text-landing">Caveats</h1>
+            <p class="text-symbols">+ - +</p>
+          </div>
+          <!-- .end .wrap -->
+       </section>
+
+        <section class="bg-apple aligncenter">
+          <div class="wrap">
+            <h5>Rare earth XRF peaks often observed but the instrument algorithm failed to report</h5>
+            <canvas id="reespectraplot" width="400" height="200"></canvas>
+          </div>
+        </section>
+
+        <section class="bg-apple aligncenter">
+          <div class="wrap">
+            <h5>Why it is important to understand the peak XRF radiation for each element?</h5>
+            <p>XRF is a bulk analysis method that captures not only XRF radiation emitted from the surface of a sample but also includes some XRF radiation originating from beneath the surface that manages to reach the detectors</p>
+          
+            <canvas id="escapedepthplot" width="400" height="200"></canvas>
+            <p> the depth of penetration: how far the X-ray from the instrument can penetrate the sample, and the escape depth: how far the XRF originated from an atom inside the sample can travel</p>
+          </div>
+        </section>
+
+        <section class="bg-apple slide-top">
+          <div class="wrap">
+            <p class="text-context"><strong>The thing is...</strong></p>
+            <h3>Most of the built-in algorithm assumes the sample we prepared is thicker that the escape depth of elements we are interested in...</h3>
+            <div class="grid vertical-align">
+              <div class="column">
+                <canvas id="relativeKplot"></canvas>
+              </div>
+              <div class="column">
+                <canvas id="relativeZnplot"></canvas>
+              </div>
+            </div>
+            <div class="aligncenter">
+              <p>Red dots are synthetic samples with the same concentration but varying in thickness</p>
+
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-black slide-top">
+          <div class="wrap">
+            <h3>Chapter 3: <br><a href="https://plantmethods.biomedcentral.com/articles/10.1186/s13007-022-00958-z">X-ray fluorescence spectroscopy for metallome analysis of herbarium specimens</a></h3>
+            <p>published in <a href="https://plantmethods.biomedcentral.com/">Plant Methods</a>, 2022</p>
+            <p class="text-context text-intro">Method development</p>
+          </div>
+        </section>
+
+        <section class="bg-apple aligncenter">
+          <div class="wrap">
+            <div class="content-center">
+              <h2 class="text-landing">XRF Method</h2>
+              <p>For herbarium XRF scanning</p>
+            </div>
+            <hr>
+            <ul class="flexblock">
+              <li>
+                <h2>
+                  Empirical calibration
+                </h2>
+                Existing method
+                <div>
+                  <p></p>
+                  <ol>
+                    <li>1. Fast and easy to prepare</li>
+                    <li>2. More accurate than manufacturer algorithm</li>
+                    <li>3. Sample matrix expected to be the same as the standard</li>
+                    <li>4. Only applicable for elements what they are prepared</li>
+                  </ol>
+                </div>
+              </li>
+              <li>
+                <h2>
+                  Built-in algorithm
+                </h2>
+                Existing method
+                <div>
+                  <p></p>
+                  <ol>
+                    <li>1. Already prepared by the manufacture</li>
+                    <li>2. Easy to use</li>
+                    <li>3. Mostly designed for rocks or soils</li>
+                    <li>4. Assume samples thick enough</li>
+                    <li>5. Not suitable for plants</li>
+                  </ol>
+                </div>
+              </li>
+              <li>
+                <h2>
+                  Dynamic analysis
+                </h2>
+                Proposed method
+                <div>
+                  <p></p>
+                  <ol>
+                    <li>1. Scientifically reviewed and mature algorithms</li>
+                    <li>2. Used to process synchrotron XRF data</li>
+                    <li>3. Fully controlled quantification</li>
+                    <li>4. Once calibrated, it can be used for any elements</li>
+                  </ol>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple aligncenter">
+          <div class="wrap">
+            <div class="aligncenter">
+              <h4>What is <code>Dynamic analysis</code>?</h4>
+              <p>To solve a complex physics equation expressing a theoretical relationship between fluorescence peak intensities and the concentration of elements by providing <b><u>all parameters</u></b> required by the equation</p>
+                <!-- <p class="noMarginPadding">A linear regression</p>
+                <pre>Y = mX + b<br>where:<br>Y is the response (dependent) variable<br>X is the predictor (independent) variable<br>m is the estimated slope<br>b is the estimated intercept<br>Three parameters are required to solve a simple regression model</pre>
+                <p></p> -->
+                <!-- <p>Dynamic analysis</p> -->
+                <p class="noMarginPadding">In case of monochromatic beam excitation (with energy <i>E<sub>0</sub></i>), the relation between the intensity of characteristic X-rays of element i (with energy <i>E<sub>i</sub></i>) and weight fraction of this element is:</p>
+                <pre><i>I<sub>i</sub>(E<sub>i</sub>) = [G&epsilon;(E<sub>i</sub>)a<sub>i</sub>(E<sub>0</sub>)I<sub>0</sub>(E<sub>0</sub>)/sin&alpha;].{1-exp[-&rho;d(&mu;(E<sub>0</sub>)csc&alpha;+&mu;(E<sub>i</sub>)csc&beta;)]}/[&mu;(E<sub>0</sub>)csc&alpha; + &mu;(E<sub>i</sub>)csc&beta;]</i><br>With: <i>a<sub>i</sub> = W<sub>i</sub>&tau;<sub>i</sub>(E<sub>0</sub>)&omega;<sub>i</sub>p<sub>i</sub>(1 - 1/j<sub>i</sub>)</i><br>Where
+                <i>I<sub>i</sub>(E<sub>i</sub>)</i> – the intensity of the fluorescent radiation of the ith element,
+                G – the geometry factor,
+                &epsilon;(E<sub>i</sub>) – the intrinsic detector efficiency for recording a photon of energy <i>E<sub>i</sub></i>,
+                <i>I<sub>0</sub>(E<sub>0</sub>)</i> – the number of incident photons of energy <i>E<sub>0</sub></i> per second per steradian,
+                <i>&alpha; and &beta;</i> – the effective incidence and takeoff angles, respectively,
+                <i>&rho;</i> – the density of the specimen in g/cm<sup>3</sup>,
+                <i>d</i> – the sample thickness in cm,
+                <i>&mu;(E<sub>0</sub>) and &mu;(E<sub>i</sub>)</i> – the total mass attenuation coefficients in cm<sup>2</sup>/g at energies <i>E<sub>0</sub></i> and <i>E<sub>i</sub></i>, respectively,
+                W<sub>i</sub> – the weight fraction of the ith element,
+                &tau;<sub>i</sub>(E<sub>0</sub>) – the total photoelectric mass absorption coefficient for the ith element at the energy <i>E<sub>0</sub></i> in cm<sup>2</sup>/g,
+                &omega;<sub>i</sub> – the fluorescence yield of the element i,
+                p<sub>i</sub> – the transition probability of the kth line of the element i,
+                j<sub>i</sub> – the absorption jump at the K-edge of photoelectric absorption in ith element.
+              </pre>
+                <h5>But, most, if not all of the available portable XRF instrument in the markets is polychromatic, how to solve it?</h5>
+              </div>
+
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple aligncenter">
+          <div class="wrap">
+            <div class="aligncenter">
+              <h4>GeoPIXE</h4>
+              <p>A software package developed by CSIRO using Dynamic Analysis for quantitative SXRF data</p>
+              <div class="content-left">
+                <img src="static/asset_images/geopixe.png" alt="Image Description" class="noMarginPadding" height="900">
+                <!-- <h3>Soil concentrations</h3>
+                <p>Wide spread nickel rich soils as the weathering product of ultramafic rocks</p> -->
+              </div>
+              <!-- .end .content-left -->
+              <div class="content-left">
+                <pre>Parameters related to sample<br>- Density <br>- Thickness <br>- Chemical composition/formula</pre>
+                <pre>Parameters related to instrument<br>- X-ray source including: current, angle in, angle out, anode spot, filter thickness, filter density, filter formula <br>- Detector including material, diameter, distance to window, area, solid angle, resolution, tilt angle, shape, array, absorber layers</pre>
+              </div>
+            </div>
+          </div>
+          <div class="wrap" style="padding-top: 20px;">
+            <ul class="flexblock clients" style="flex-wrap: nowrap;">
+              <li class="chartComponent">
+                <h3>Input</h3>
+                <div class="inputFlowChart">
+                  Sample parameters
+                </div>
+                
+                <div class="inputFlowChart">
+                  Instrument parameters
+                </div>
+                
+              </li>
+              <li class="chartConnectingLine" style="background: white;"></li>
+              <li class="chartComponent" >
+                <h3>Process</h3>
+                <div class="inputFlowChart">
+                  GeoPIXE
+                </div>
+              </li>
+              <li class="chartConnectingLine" style="background: white;"></li>
+              <li class="chartComponent">
+                <h3>Output</h3>
+                <div class="inputFlowChart">
+                  Concentration
+                </div>
+              </li>
+
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="card-50">
+              <div class="flex-content">
+                <h3>Sample parameters</h3>
+                <ul class="flexblock specs">
+                  <li>
+                    <div>
+                      <span>0.9 g/cm<sup>3</sup></span>
+                      <h2>Density</h2>
+                      less than water
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <span>C<sub>6</sub>H<sub>10</sub>O<sub>5</sub></span>
+                      <h2>Formula</h2>
+                      Cellulose
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <span>?</span>
+                      <h2>Thickness</h2>
+                      Unknown/to be estimated
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- end .flex-content-->
+              <figure>
+                <img class="aligncenter" src="static/asset_images/dry_leaf.png" alt="Image Description">
+                <a href="https://www.freepik.com/free-photo/single-dried-leaf-black-table_17182753.htm#query=dry%20leaf&position=19&from_view=search&track=ais">Source</a>
+              </figure>
+            </div>
+            <!-- .end card-50 -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple aligncenter">
+          <div class="wrap zoomIn">
+            <h4>
+              Thickness?
+            </h4>
+            <p class="noMarginPadding">An illustration of herbarium XRF scanning: Observe titanium plate beneath herbarium specimen</p>
+            <img src="static/asset_images/xrf_measurement_illustration.png" alt="Image Description" class="noMarginPadding" height="900">
+          </div>
+          <div class="wrap">
+            <div class="content-left">
+              <p class="noMarginPadding" style="font-size: 20px;">Remember: The XRF of Ti from Ti metal can travel ~2mm in dry leaves </p>
+              <img src="static/asset_images/ti_escape.png" alt="Image Description" class="noMarginPadding" height="900">
+            </div>
+            <!-- .end .content-left -->
+            <div class="content-left">
+              <p class="noMarginPadding" style="font-size: 20px;">According to XXX, the XRF of Ti from Ti metal will emerge from herbarium sample depending on variation in density and thickness </p>
+              <pre><i>(I<sub>ts</sub> - I<sub>s</sub>)/I<sub>t</sub> = exp[-&mu;m]</i><br>Where:<br><i>I<sub>t</sub></i>: the Ti intensities from the Ti plate alone<br><i>I<sub>s</sub></i>: the Ti intensities from the sample<br><i>I<sub>ts</sub></i>: the Ti intensities the sample on top of the Ti plate<br>Ti concentration in leaves &lt; 34 &mu;g/g or even less (Cary and Kubota 1990; Tlustoš et al. 2011), thus not producing significant Ti fluorescence. So, equation can be simplified to:<br><i>I<sub>ts</sub> = I<sub>t</sub> exp[-&mu;m]</i></pre>
+            </div>
+            <!-- .end .wrap -->
+          </div>
+        </section>
+
+        <section class="bg-black">
+          <div class="wrap">
+            <div class="aligncenter">
+              <h4>
+                Thickness?
+              </h4>
+              <p>Relationship between sample area density and transmitted Ti signals</p>
+              <div class="content-left">
+                <img src="static/asset_images/tiIntensity.gif" alt="Image Description" class="noMarginPadding" height="900" >
+              </div>
+              <!-- .end .content-left -->
+              <div class="content-left">
+                <img src="static/asset_images/tiVsarealdensity.png" alt="Image Description" class="noMarginPadding" style="max-height: 600px;">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple aligncenter">
+          <div class="wrap">
+            <div class="aligncenter">
+              <h4>GeoPIXE requirements</h4>
+            </div>
+          </div>
+          <div class="wrap" style="padding-top: 20px;">
+            <ul class="flexblock clients" style="flex-wrap: nowrap;">
+              <li class="chartComponent">
+                <h3>Input</h3>
+                <div class="inputFlowChart" style="background: #c9ffc9;">
+                  &#10003; Sample parameters
+                </div>
+                
+                <div class="inputFlowChart" style="background: #ffebeb;">
+                  &#63; Instrument parameters
+                </div>
+                
+              </li>
+              <li class="chartConnectingLine" style="background: white;"></li>
+              <li class="chartComponent" >
+                <h3>Process</h3>
+                <div class="inputFlowChart">
+                  GeoPIXE
+                </div>
+              </li>
+              <li class="chartConnectingLine" style="background: white;"></li>
+              <li class="chartComponent">
+                <h3>Output</h3>
+                <div class="inputFlowChart">
+                  Concentration
+                </div>
+              </li>
+
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple aligncenter">
+          <div class="wrap">
+            <div class="aligncenter">
+              <h4>Reverse engineering</h4>
+              <p>Use certified materials during calibration to reverse engineering the instrument/p>
+
+            </div>
+          </div>
+          <div class="wrap" style="padding-top: 20px;">
+            <ul class="flexblock clients" style="flex-wrap: nowrap;">
+              <li class="chartComponent">
+                <h3>Input</h3>
+                <div class="inputFlowChart" style="background: #c9ffc9;">
+                  &#10003; Certified reference materials
+                </div>
+                
+                <div class="inputFlowChart" style="background: #ffebeb;">
+                  &#63; Instrument parameters
+                </div>
+                
+              </li>
+              <li class="chartConnectingLine" style="background: white;"></li>
+              <li class="chartComponent" >
+                <h3>Process</h3>
+                <div class="inputFlowChart">
+                  GeoPIXE
+                </div>
+              </li>
+              <li class="chartConnectingLine" style="background: white;"></li>
+              <li class="chartComponent">
+                <h3>Output</h3>
+                <div class="inputFlowChart" style="background: #c9ffc9;">
+                  &#10003; Concentration
+                </div>
+              </li>
+
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple aligncenter">
+          <div class="wrap">
+            <h4>
+              Instrument parameters
+            </h4>
+            <p>Part 1: Source</p>
+            <img src="static/asset_images/geopixe_source.png" alt="Image Description" class="noMarginPadding" style="max-height: 600px;">
+          </div>
+        </section>
+
+        <section class="bg-apple aligncenter">
+          <div class="wrap">
+            <h4>
+              Instrument parameters
+            </h4>
+            <p>Part 2: Filters</p>
+            <img src="static/asset_images/geopixe_filter.png" alt="Image Description" class="noMarginPadding" style="max-height: 600px;">
+          </div>
+        </section>
+
+        <section class="bg-apple aligncenter">
+          <div class="wrap">
+            <h4>
+              Instrument parameters
+            </h4>
+            <p>Part 3: Detector</p>
+            <img src="static/asset_images/geopixe_detector.png" alt="Image Description" class="noMarginPadding" style="max-height: 600px;">
+          </div>
+        </section>
+
+        <section class="fullscreen bg-apple aligncenter">
+          <h4>
+            Illustration
+          </h4>
+          <p class = "noMarginPadding">A simple fitting one sample: load spectrum, load calculate parameter (yield), do fitting, and open next spectrum</p>
+          <p>Source parameters x filter parameters x detector parameters = millions iterations</p>
+            <video autoplay loop muted style="max-height: 700px;">
+             <source src="static/asset_images/geopixe_fitting.mp4" type="video/mp4">
+            </video>
+         </section>
+
+         <section class="bg-black">
+          <div class="wrap size-50 bg-white">
+            <h4><strong>Leasons from reverse engineering</strong></h4>
+            <hr>
+            <ol>
+              <li><b>Better</b> than empirical calibration and built-in algorithm</li>
+              <li><b>Exhausting and time consuming</b>: it took 1 year to get good parameters (error &lt; 5%)</li>
+              <li><b>Prone to errors</b>, if done manually</li>
+              <li>work smart not hard; use <code style="background: gray;color: white;">pyautogui</code> to automate <code style="background: gray;color: white;">typing</code> dan <code style="background: gray;color: white;">clicking</code>.</li>
+            </ol>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-black slide-top">
+          <div class="wrap">
+            <h3>Chapter 4: <br><a href="https://www.publish.csiro.au/bt/BT22028">A systematic assessment of the metallome of selected plant families in the Queensland (Australia) flora using X-ray fluorescence spectroscopy</a></h3>
+            <p>published in <a href="https://www.publish.csiro.au/bt/BT22028">Australian Journal of Botany</a>, 2023</p>
+            <p class="text-context text-intro">The application of the developed method</p>
+          </div>
+        </section>
+ 
+        <section class="bg-apple aligncenter">
+          <span class="background-right-bottom" style="background-image:url('static/asset_images/australia.png')"></span>
+          <div class="wrap">
+            <div class="content-left">
+              <h3>Hyperaccumulators in Australia/Queensland</h3>
+              <ul class="flexblock specs">
+                <li>
+                  <div>
+                    <svg >
+                      <use xlink:href="#fa-leaf"></use>
+                    </svg>
+                    <i class="fa fa-camera-retro fa-lg"></i>
+                    <h2>  Few hyperaccumulator</h2>
+                    &lt;10 of 721 
+                  </div>
+                </li>
+                <li>
+                  
+                  <div>
+                    <svg class="fa-money">
+                      <use xlink:href="#fa-money"></use>
+                    </svg>
+                    
+                    <h2>Metal rich soil</h2>
+                    Many metal deposits
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <svg class="fa-database">
+                      <use xlink:href="#fa-database"></use>
+                    </svg>
+                    <h2>Existing data</h2>
+                    &gt; 2000 specimens were scanned
+                  </div>
+                </li>
+              </ul>
+              <h4>Can we reveal any missed hyperaccumulators from the previous studies with the developed method? </h4>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+     
+        <section class="bg-apple">
+          <div class="wrap">
+            <!-- li>a? Add blink (block link) = <ul class="flexblock metrics blink">-->
+              <div class="content-center">
+                <h2 class="text-landing">Results</h2>
+                <p>Newly identified hyperaccumulators by the developed methods</p>
+              </div>
+
+            <ul class="flexblock metrics border">
+              <li class="resultChapter4">Manganese
+                <span>15</span>
+              </li>
+              <li class="resultChapter4">Nickel
+                <span>2</span>
+              </li>   
+              <li class="resultChapter4">Cobalt
+                <span>3</span>
+              </li>   
+              <li class="resultChapter4">Zinc
+                <span>3</span>
+              </li>   
+              <li class="resultChapter4">Rare Earth
+                <span>2</span>
+              </li>   
+              <li class="resultChapter4">Selenium
+                <span>1</span>
+              </li>         
+            </ul>
+            <p>The two new REE hyperaccumulators were further confirmed by taking new samples from the field, subsequently measured using ICP-AES in <a href="https://link.springer.com/article/10.1007/s11104-022-05805-7">this study </a>.</p>
+
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-black">
+          <div class="wrap">
+            <h4>Spatial distribution of Hyperaccumulators</h4>
+
+            <div class="content-left">
+              <div id="hyperaccumulatorMap" style="width: 100%;height: 80vh;"></div>
+            </div>
+
+            <div class="content-left aligncenter">
+              <ul class="flexblock metrics border">
+                <li>
+                  <div class="aligncenter hyperaccumulatorLayer">
+                    <span>
+                      <img src="static/css/images/marker-icon.png" alt="Icon" style="filter: hue-rotate(45deg);">
+                    </span>
+                    <div><input type="checkbox" class="layerCheckbox" name="mnLayerCheckbox" id="mnLayerCheckbox" checked> Mn Layer</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="aligncenter hyperaccumulatorLayer">
+                    <span>
+                      <img src="static/css/images/marker-icon.png" alt="Icon" style="filter: hue-rotate(90deg);">
+                    </span>
+                    <div><input type="checkbox" class="layerCheckbox" name="coLayerCheckbox" id="coLayerCheckbox" checked> Co Layer</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="aligncenter hyperaccumulatorLayer">
+                    <span>
+                      <img src="static/css/images/marker-icon.png" alt="Icon" style="filter: hue-rotate(135deg);">
+                    </span>
+                    <div><input type="checkbox" class="layerCheckbox" name="niLayerCheckbox" id="niLayerCheckbox" checked> Ni Layer</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="aligncenter hyperaccumulatorLayer">
+                    <span>
+                      <img src="static/css/images/marker-icon.png" alt="Icon" style="filter: hue-rotate(225deg);">
+                    </span>
+                    <div><input type="checkbox" class="layerCheckbox" name="znLayerCheckbox" id="znLayerCheckbox" checked> Zn Layer</div>
+                  </div>
+                </li>
+              </ul>
+              <div id="herbariumChart" style="width: 80%;">
+                <canvas id="herbariumChartCanvas"></canvas>
+              </div>
+            
+              <div id="soilTypeChart" style="width: 80%;">
+                  <canvas id="soilTypeChartCanvas"></canvas>
+              </div>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-black slide-top">
+          <div class="wrap">
+            <h3>Chapter 5:<br><a href="https://link.springer.com/article/10.1007/s11104-023-06185-2">Recognition of trace element hyperaccumulation based on empirical datasets derived from XRF scanning of herbarium specimens</a></h3>
+            <p>published in <a href="https://link.springer.com/article/10.1007/s11104-023-06185-2">Plant and Soil</a>, 2023</p>
+            <p class="text-context text-intro">The application of the developed method</p>
+          </div>
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap">
+              <div class="content-center">
+                <h2>Hyperaccumulators</h2>
+                <p>Plants exhibiting concentrations of at least an order of magnitude higher than that found in <b>normal</b> plants,</p>
+              </div>
+            <ul class="flexblock metrics border">
+              <li class="resultChapter4">Manganese
+                <span>10000</span>µg/g
+              </li>
+              <li class="resultChapter4">Cobalt
+                <span>300</span>µg/g
+              </li>   
+              <li class="resultChapter4">Nickel
+                <span>1000</span>µg/g
+              </li>   
+              <li class="resultChapter4">Copper
+                <span>300</span>
+              </li>    
+              <li class="resultChapter4">Zinc
+                <span>3000</span>µg/g
+              </li>   
+              <li class="resultChapter4">Rare Earth
+                <span>1000</span>µg/g
+              </li>   
+              <li class="resultChapter4">Arsenic
+                <span>1000</span>µg/g
+              </li>         
+              <li class="resultChapter4">Selenium
+                <span>100</span>µg/g
+              </li>   
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <h3 class="aligncenter">Assessing hyperaccumulator thresholds</h3>
+            <p class="aligncenter">Using XRF and ICP data</p>
+
+            <ul class="flexblock metrics border">
+              <li class="resultChapter4">
+                <span style="padding-bottom: 50px;"> XRF Data</span>
+
+                <div class="content-center">
+                  <ul class="flexblock specs">
+                    <li  style="padding-bottom: 20px;">
+                      <div class="aligncenter" style="display: flex;flex-direction: column;align-items: center;">
+                        <h2><span style="margin-right: 0;">26942</span></h2>
+                        <p>Total herbarium specimens</p>
+                      </div>
+                    </li>
+
+                    <li style="padding-bottom: 20px;">
+                      <div class="aligncenter" style="display: flex;flex-direction: column;align-items: center;">
+                        <h2><span style="margin-right: 0;">1150</span></h2>
+                        <p>New datasets</p>
+                      </div>
+                    </li>
+                    <li style="padding-bottom: 20px;">
+                      <div class="aligncenter" style="display: flex;flex-direction: column;align-items: center;">
+                        <div style="display: flex;flex-direction: row;">
+                          <a href="https://www.flaticon.com/free-icons/papua-new-guinea" title="papua new guinea icons">
+                            <img src="static/asset_images/papua-new-guinea.png" alt="Image Description" class="noMarginPadding" style="max-width: 90%;">
+                          </a>
+                          <a href="https://www.flaticon.com/free-icons/france" title="france icons">
+                            <img src="static/asset_images/france.png" alt="Image Description" class="noMarginPadding" style="max-width: 90%;">
+                          </a>
+                          <a href="https://www.flaticon.com/free-icons/malaysia" title="malaysia icons">
+                            <img src="static/asset_images/malaysia.png" alt="Image Description" class="noMarginPadding" style="max-width: 90%;">
+                          </a>
+                          <a href="https://www.flaticon.com/free-icons/australia" title="australia icons">
+                            <img src="static/asset_images/australian-flag.png" alt="Image Description" class="noMarginPadding" style="max-width: 90%;">
+                          </a>
+                        </div>
+       
+                        <p>From four countries</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="resultChapter4">
+                <span style="padding-bottom: 50px;"> ICP-AES Data</span>
+
+                <div class="content-center">
+                  <ul class="flexblock specs">
+                    <li  style="padding-bottom: 20px;">
+                      <div class="aligncenter" style="display: flex;flex-direction: column;align-items: center;">
+                        <h2><span style="margin-right: 0;">1710</span></h2>
+                        <p>Total field samples</p>
+                      </div>
+                    </li>
+                    <li style="padding-bottom: 20px;">
+                      <div class="aligncenter" style="display: flex;flex-direction: column;align-items: center;">
+                        <div style="display: flex;flex-direction: row;">
+                          <a href="https://www.flaticon.com/free-icons/malaysia" title="malaysia icons">
+                            <img src="static/asset_images/malaysia.png" alt="Image Description" class="noMarginPadding" style="max-width: 90%;">
+                          </a>
+                        </div>
+       
+                        <p>From one country</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>   
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+       
+        <section class="bg-apple">
+          <div class="wrap">
+            <h2 class="aligncenter">Below detection limits</h2>
+            <p class="aligncenter">XRF has a high detection limit</p>
+            <table>
+              <thead>
+               <tr>
+                <th>Element</th>
+                <th>XRF</th>
+                <th>ICP-AES</th>
+               </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Manganese</td>
+                  <td>12517</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Cobalt</td>
+                  <td>26516</td>
+                  <td>115</td>
+                </tr>
+                <tr>
+                  <td>Nickel</td>
+                  <td>24684</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Zinc</td>
+                  <td>23346</td>
+                  <td>293</td>
+                </tr>
+                <tr>
+                  <td>Arsenic</td>
+                  <td>26865</td>
+                  <td>Not available</td>
+                </tr>
+                <tr>
+                  <td>Selenium</td>
+                  <td>26861</td>
+                  <td>Not available</td>
+                </tr>
+                <tr>
+                  <td>Yttrium</td>
+                  <td>26837</td>
+                  <td>Not available</td>
+                </tr>
+      
+
+              </tbody>
+            </table>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple aligncenter">
+          <div class="wrap">
+              <h4>How to deal with below detection limit values?</h4>
+              <p>Regression on Order Statistics: 
+                <a href="https://pubs.usgs.gov/publication/70027922">Lee and Helsel (2005)</a>,
+                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0883292705000818">Lee and Helsel (2005)</a>,
+                <a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/WR024i012p01997">Dennis R. Helsel and Timothy A. Cohn (1988)</a>
+              </p>
+              <img src="static/asset_images/ros-plot.png" alt="Image Description" class="noMarginPadding" height="900" >
+          </div>
+        </section> 
+
+        <section class="bg-apple aligncenter">
+          <div class="wrap">
+              <h4>Regression on Order Statistics vs Constant value</h4>
+              <div>
+                <canvas id="rosVsConstant"></canvas>
+              </div>
+          </div>
+        </section> 
+
+        <section class="bg-apple aligncenter">
+          <div class="wrap">
+              <h4>Regression on Order Statistics vs Constant value</h4>
+              <div>
+                <canvas id="rosVsConstantICP"></canvas>
+              </div>
+          </div>
+        </section> 
+
+        <section class="bg-apple aligncenter">
+          <div class="wrap">
+              <h4>Determining the threshold between Normal and Hyperaccumulator plants</h4>
+              <img src="static/asset_images/hyperaccumulator-thresold.jpg" alt="Image Description" class="noMarginPadding" height="900" >
+          </div>
+        </section> 
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <h2 class="aligncenter">Hyperaccumulator thresholds in &mu;g/g </h2>
+            <table>
+              <thead>
+               <tr>
+                <th>Element</th>
+                <th>Historical</th>
+                <th>XRF</th>
+                <th>ICP-AES</th>
+               </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Manganese</td>
+                  <td>10000</td>
+                  <td>1210</td>
+                  <td>2850</td>
+                </tr>
+                <tr>
+                  <td>Cobalt</td>
+                  <td>300</td>
+                  <td>32</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>Nickel</td>
+                  <td>1000</td>
+                  <td>280</td>
+                  <td>694</td>
+                </tr>
+                <tr>
+                  <td>Zinc</td>
+                  <td>3000</td>
+                  <td>181</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>Arsenic</td>
+                  <td>1000</td>
+                  <td>8</td>
+                  <td>Not available</td>
+                </tr>
+                <tr>
+                  <td>Selenium</td>
+                  <td>100</td>
+                  <td>10</td>
+                  <td>Not available</td>
+
+                </tr>
+                <tr>
+                  <td>Yttrium</td>
+                  <td>Not available</td>
+                  <td>11</td>
+                  <td>Not available</td>
+                </tr>
+      
+
+              </tbody>
+            </table>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+
+        <section class="bg-black slide-top">
+          <div class="wrap">
+            <h3>Chapter 6:<br>Portable X-ray fluorescence (XRF) spectroscopy for intact dry leaves</h3>
+            <p>under revision submitted to <a href="https://esj-journals.onlinelibrary.wiley.com/journal/14401703">Ecological Research</a>, 2023</p>
+            <p class="text-context text-intro">The application of the developed method</p>
+          </div>
+        </section>
+
+        <section class="bg-apple">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="aligncenter">
+                <h2>How good is the developed method for different instruments?</h2>
+              <img src="static/asset_images/three-xrf.jpg" alt="Image Description" class="noMarginPadding" height="900" style="max-width: 50%;" >
+
+            </div>
+
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+
+        <section class="bg-apple aligncenter">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <h2>3 different instruments </h2>
+            <h2>114 leaves </h2>
+            <h2>3 different algorithms </h2>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-apple aligncenter">
+          <div class="wrap">
+              <h4>The XRF spectra of the three instruments</h4>
+              <div>
+                <canvas id="threeInstrumentChart"></canvas>
+              </div>
+          </div>
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <h3 class="aligncenter">Mean absolute errors to the highest errors [relative percentage error to highest errors]</h3>
+            <table>
+              <thead>
+               <tr>
+                <th>Intrument</th>
+                <th>Algorithm</th>
+                <th>Manganese</th>
+                <th>Iron</th>
+                <th>Cobalt</th>
+                <th>Nickel</th>
+                <th>Copper</th>
+                <th>Zinc</th>
+               </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Rocksand</td>
+                  <td>Empirical</td>
+                  <td >675.1 [5.7%]</td>
+                  <td>375.4 [32.5%]</td>
+                  <td>36.8 [1.4%]</td>
+                  <td>1484.3 [3.2%]</td>
+                  <td>3.1 [1.7%]</td>
+                  <td>103.5 [7.7%]</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>independent pipeline</td>
+                  <td style="color: green;">500.3 [4.2%]</td>
+                  <td style="color: green;">270 [23.3%]</td>
+                  <td style="color: green;">25.4 [0.9%]</td>
+                  <td style="color: green;">636.5 [1.4%]</td>
+                  <td style="color: green;">3.4 [1.8%]</td>
+                  <td style="color: green;">65 [4.9%]</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Manufacturer</td>
+                  <td>574.5 [4.9%]</td>
+                  <td>288.5 [24.9%]</td>
+                  <td>73.5 [2.7%]</td>
+                  <td>2930.6 [6.3%]</td>
+                  <td>8.7 [4.6%]</td>
+                  <td>131.5 [9.8%]</td>
+                </tr>
+                <tr>
+                  <td>Goldd+</td>
+                  <td>Empirical</td>
+                  <td  style="color: green;">395.6 [3.4%]</td>
+                  <td>375.4 [32.5%]</td>
+                  <td  style="color: green;">36.4 [1.3%]</td>
+                  <td>1181.9 [2.5%]</td>
+                  <td>3.1 [1.7%]</td>
+                  <td  style="color: green;">81.9 [6.1%]</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Independent pipeline</td>
+                  <td>497.4 [4.2%]</td>
+                  <td  style="color: green;">268.9 [23.2%]</td>
+                  <td>62.3 [2.3%]</td>
+                  <td  style="color: green;">707 [1.5%]</td>
+                  <td  style="color: green;">2.8 [1.5%]</td>
+                  <td>132.3 [9.9%]</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Manufacturer</td>
+                  <td>11776.4 [100%]</td>
+                  <td>1156.5 [100%]</td>
+                  <td>2719.7 [100%]</td>
+                  <td>46454.2 [100%]</td>
+                  <td>188.1 [100%]</td>
+                  <td>1338.3 [100%]</td>
+                </tr>
+                <tr>
+                  <td>Tracer 5g</td>
+                  <td>Empirical</td>
+                  <td>415.5 [3.5%]</td>
+                  <td>376.6 [32.6%]</td>
+                  <td style="color: green;">54.7 [2%]</td>
+                  <td>1018.2 [2.2%]</td>
+                  <td style="color: green;">3 [1.6%]</td>
+                  <td>81.9 [6.1%]</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Independent pipeline</td>
+                  <td style="color: green;">276.9 [2.4%]</td>
+                  <td style="color: green;">266.6 [23.1%]</td>
+                  <td>75.6 [2.8%]</td>
+                  <td style="color: green;">711.2 [1.5%]</td>
+                  <td>5.9 [3.1%]</td>
+                  <td style="color: green;">59.9 [4.5%]</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-black slide-top">
+          <div class="wrap">
+            <h3>Chapter 7:<br>Reflectance spectroscopy as a promising tool for 'sensing' metals in hyperaccumulator plants</h3>
+            <p>published in <a href="https://link.springer.com/article/10.1007/s00425-023-04167-3">Planta</a>, 2023</p>
+            <p class="text-context text-intro">Exploring other possibilities</p>
+          </div>
+        </section>
+
+        <section class="bg-apple aligncenter">
+          <div class="wrap">
+              <h4>Metal absorbance bands</h4>
+              <div>
+                <canvas id="absorbanceBandsChart"></canvas>
+              </div>
+          </div>
+        </section> 
+
+        <section class="bg-apple">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="aligncenter">
+              <h3>Reflectance vs Concentration</h3>
+              <img src="static/asset_images/reflectanceVsniConcentration.jpg" alt="Image Description" class="noMarginPadding" height="900" style="max-width: 70%;" >
+
+            </div>
+
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap">
+              <div class="content-center">
+                <h2>Nickel Hyperaccumulator Leaves</h2>
+              </div>
+            <ul class="flexblock metrics border">
+              <li class="resultChapter4"><i>Berkheya coddii</i>
+                <span>69</span>leaves
+              </li>
+              <li class="resultChapter4"><i>Glochidion bambangan</i>
+                <span>34</span>leaves
+              </li>   
+              <li class="resultChapter4"><i>Glochidion panataran</i>
+                <span>34</span>leaves
+              </li>   
+              <li class="resultChapter4"><i>Phyllanthus rufuschaneyi</i>
+                <span>35</span>
+              </li>    
+              <li class="resultChapter4"><i>Rinorea bengalensis</i>
+                <span>32</span>leaves
+              </li>   
+              <li class="resultChapter4"><i>Rinorea javanica</i>
+                <span>24</span>leaves
+              </li>   
+              <li class="resultChapter4"><i>Actephila alanbakeri</i>
+                <span>32</span>leaves
+              </li>         
+              <li class="resultChapter4"><i>Walsura pinnata</i>
+                <span>26</span>leaves
+              </li>   
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="aligncenter">
+              <h3>Nickel concentration and Spectral reflectance</h3>
+
+              <img src="static/asset_images/concentrationVsSpectra.png" alt="Image Description" class="noMarginPadding" height="900" style="max-width: 70%;" >
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple aligncenter">
+          <div class="wrap">
+              <h4>Mean spectral reflctance of Hyperaccumulator leaves per species</h4>
+              <div>
+                <canvas id="hyperaccumulatorReflectance"></canvas>
+              </div>
+          </div>
+        </section> 
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="aligncenter">
+              <h3>Nickel concentration and Spectral reflectance</h3>
+
+              <img src="static/asset_images/correlation_only.jpg" alt="Image Description" class="noMarginPadding"  >
+            </div>
+          </div>
+        </section>
+        <!-- Thank you -->
+        <section class="bg-apple aligncenter">
+          <h3><strong>Thank you!</strong></h2>
+            <span>
+              Chariman: <a href="https://smi.uq.edu.au/profile/4672/nathan-fox" style="font-size: 24px;">Dr Nathan Fox</a>
+            </span>
+            <span>
+              Examiner: <a href="https://scholar.google.com/citations?user=7BQg-SAAAAAJ&hl=en" style="font-size: 24px;">Prof. Hudson W. P. de Carvalho
+              </a>
+            </span>
+            <span>
+              Examiner: <a href="https://scholar.google.com/citations?user=KY6tsboAAAAJ&hl=en" style="font-size: 24px;">Dr Mark J Hackett
+              </a>
+            </span>
+            <hr>
+            <span>
+              Supervisors: <br>
+              <a href="https://www.researchgate.net/profile/Antony-Ent" style="font-size: 24px;">Dr Antony van der Ent</a>
+                <br><a href="https://www.researchgate.net/profile/Peter-Erskine" style="font-size: 24px;">Prof Peter D. Erskine</a>
+                  <br><a href="https://www.researchgate.net/profile/Lachlan-Casey" style="font-size: 24px;">Dr Lachlan Casey</a>
+            </span>
+            <hr>
+            <span>
+              Laboratory Team: 
+              <br>
+              <a href="https://www.researchgate.net/profile/Vinod-Nath-2" style="font-size: 24px;">Mr Vinod Nath</a>
+                <br><a href="https://www.researchgate.net/profile/Vanessa-Glenn-2" style="font-size: 24px;">Ms Vanessa Glenn</a>
+                <br><a href="https://smi.uq.edu.au/profile/3428/natasha-ufer" style="font-size: 24px;">Natasha Ufer</a>
+              </a>
+            </span>
+            
+            <hr>
+            <span>
+              The family of the Centre for Mined Land Rehabilitation at SMI : <br>
+              <a href="https://www.researchgate.net/profile/Philip-Nkrumah" style="font-size: 24px;">Dr Philip Nti Nkrumah</a>
+                 * <a href="https://www.researchgate.net/profile/Adrian-Paul" style="font-size: 24px;">Dr Adrian Paul</a>
+                 * <a href="https://www.researchgate.net/profile/Farida-Abubakari" style="font-size: 24px;">Dr Farida Abubakari</a>
+                 * <a href="https://www.researchgate.net/profile/Roger-Tang-2" style="font-size: 24px;">Dr Roger Tang</a>
+                 * <a href="https://www.researchgate.net/profile/Amelia-Corzo-Remigio" style="font-size: 24px;">Dr Amelia Corzo Remigio</a>
+                 * <a href="https://www.researchgate.net/profile/Maggie-Anne-Harvey" style="font-size: 24px;">Dr Maggie-Anne Harvey</a>
+                 * <a href="https://www.researchgate.net/profile/Vidiro-Gei" style="font-size: 24px;">Dr Vidiro Gei</a>
+                 * <a href="https://www.researchgate.net/profile/Katherine-Pinto-Irish" style="font-size: 24px;">Katherine Pinto Irish</a>
+            </span>
+            <hr>
+            <span>
+              Collaborators : <br>
+              <a href="https://www.researchgate.net/profile/Guillaume-Echevarria" style="font-size: 24px;">Prof Guillaume Echevarria</a>
+                 * <a href="https://www.researchgate.net/profile/Wojciech-Przybylowicz" style="font-size: 24px;">Dr Wojciech J Przybyłowicz</a>
+                 * <a href="https://www.researchgate.net/profile/Jolanta-Mesjasz-Przybylowicz" style="font-size: 24px;">Dr Jolanta Mesjasz-Przybyłowicz</a>
+                 * <a href="https://www.researchgate.net/profile/Chris-Ryan-5" style="font-size: 24px;">Dr Chris G. Ryan</a>
+                 * <a href="https://www.researchgate.net/profile/Gillian-Brown-8" style="font-size: 24px;">Dr Gillian Kim Brown</a>
+            </span>
+          
+            
+             
+        </section>
+
+      </article>
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="static/js/webslides.js"></script>
+
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="static/js/svg-icons.js"></script>
+
+    <script src="static/js/whoami.js"></script>
+    <script src="static/js/whyido.js"></script>
+    <script src="static/js/hyperaccumulatorchart.js"></script>
+    <script src="static/js/nihyperaccumulatorchart.js"></script>
+    <script src="static/js/rareniprice.js"></script>
+    <script src="static/js/ree_spectraplot.js"></script>
+    <script src="static/js/xrfpeak_spectraplot.js"></script>
+    <script src="static/js/escape_depth.js"></script>
+    <script src="static/js/relativeIntensity.js"></script>
+    <script src="static/js/hyperaccumulatorMap.js"></script>
+    <script src="static/js/rosVsConstantchart.js"></script>
+    <script src="static/js/rosVsConstantICPchart.js"></script>
+    <script src="static/js/threeInstrumentChart.js"></script>
+    <script src="static/js/absorbanceBandsChart.js"></script>
+    <script src="static/js/hyperaccumulatorReflectanceChart.js"></script>
+
+  </body>
+</html>

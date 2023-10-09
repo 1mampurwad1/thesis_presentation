@@ -1,0 +1,128 @@
+.tooltip-container {
+    position: relative;
+}
+
+.box {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.inputFlowChart{
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(255 255 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.box:hover .tooltip {
+    opacity: 1;
+}
+
+.inputFlowChart:hover .tooltip {
+    opacity: 1;
+}
+
+.delayQuartersecond{
+  animation-delay: 0.25s;
+}
+
+.delayHalfsecond{
+  animation-delay: 0.5s;
+}
+
+.delayOnesecond{
+  animation-delay: 1s;
+}
+
+.delayOneHalfsecond{
+  animation-delay: 1.5s;
+}
+
+/* leaflet */
+#map {
+    width: 100%;
+    height: 500px;
+}
+#bangkamap {
+    width: 100%;
+    height: 500px;
+}
+
+/* Define styles for city info divs */
+.city-info {
+    display: none;
+}
+img.enschede { filter: hue-rotate(180deg); }
+img.brisbane { filter: hue-rotate(210deg); }
+img.home { filter: hue-rotate(2400deg); }
+
+.noMarginPadding{
+    padding: 0;
+    margin: 0;
+}
+
+li.imageinli {
+    display: flex;
+    align-items: center;
+    text-align: center;  
+}
+
+li.chartConnectingLine {
+    height: 2px;
+    min-width: 3em;
+    background: white;
+    margin: auto;
+    max-width: 100px;
+}
+
+li.chartComponent{
+    flex: 1;
+    border-radius: 1em;
+    border-style: dotted;
+    padding: 1em;
+    text-align: center;
+    border: 2px solid #999;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+}
+
+.resultChapter4{
+    outline:  1px solid white;
+    outline-offset: -5px;
+    border-radius:25px
+}
+.hyperaccumulatorLayer{
+    border: 1px solid black;
+    background: black;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+p.popupP{
+    margin: 0;
+    font-size: 12px;
+}
