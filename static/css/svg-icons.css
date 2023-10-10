@@ -953,7 +953,7 @@ svg {
 }
 
 .fa-spinner {
-	width: 1.0000000596046448em;
+	width: 4.0000000596046448em;
 }
 
 .fa-circle {
@@ -2358,6 +2358,10 @@ svg {
 }
 
 .fa-money {
+	width: 1.1428583338856697em;
+}
+
+.fa-spinne {
 	width: 1.1428583338856697em;
 }
 
