@@ -177,10 +177,11 @@
             <figure style="justify-content: center; align-items: center;">
               <img src="static/asset_images/photo2.JPG" alt="Yosemite National Park">
               <div class="lds-ripple box" style="z-index: 999; position: absolute;bottom: 0;right: 0;">
-                <p class="tooltip" style="max-width: 300px; position: absolute; margin: 0; bottom: 0; right: 0;">
+                <p class="tooltip" style="min-width: 300px; position: absolute; margin: 0; bottom: 0; right: 0;min-height: 40px;">
                   Tailings:<br>99% quartz<br> 1% Rare Earth Elements
                 </p>
-                <div></div><div></div></div>
+                <div></div><div></div>
+              </div>
 
               <figcaption>
                 <a href="https://www.google.com/maps/place/Bangka+Island/@-2.3081392,105.2281727,8.8z/data=!4m6!3m5!1s0x2e22cd8cd3c9a1a3:0xd53781c1e885e217!8m2!3d-2.2884782!4d106.0640179!16zL20vMDJxenAz?entry=ttu" title="Tin tailings">
@@ -206,9 +207,16 @@
           <!--.wrap = container (width: 90%) -->
           <div class="wrap">
             <h2>July 2019, PhD commenced</h2>
-            <h3><u><i>Literature review</i></u></h3>
           </div>
           <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-black slide-top">
+          <div class="wrap">
+            <h3>Chapter 1: <br><a href="https://link.springer.com/chapter/10.1007/978-3-030-58904-2_9">Tools for the Discovery of Hyperaccumulator Plant Species in the Field and in the Herbarium</a></h3>
+            <p>published in <a href="https://link.springer.com/book/10.1007/978-3-030-58904-2">Agromining: Farming for Metals, 2nd edition</a>, 2021</p>
+            <p class="text-context text-intro">Literature review</p>
+          </div>
         </section>
 
         <section class="bg-black">
@@ -346,8 +354,7 @@
           <div class="wrap">
             <div class="aligncenter">
               <h4>A new approach was proposed to expedite the identification of hyperaccumulators</h4>
-              <p>Using a portable X-ray fluorescence instrument to scan herbarium specimens
-              </p>
+              <p>Using a portable X-ray fluorescence instrument to scan herbarium specimens: Rapid analysis, Non destructive test, Abundance Sample</p>
               <div class="content-left">
                 <img src="static/asset_images/xrf_herbarium.png" alt="Image Description" class="noMarginPadding" height="900">
                 <!-- <h3>Soil concentrations</h3>
@@ -357,8 +364,7 @@
               <div class="content-left">
                 <img src="static/asset_images/xrf_scanning.png" alt="Image Description" class="noMarginPadding" height="900">
               </div>
-              <p>Rapid analysis, Non destructive screen, Abundance Sampling </p>
-
+              <p>Source: <a href="https://www.nature.com/articles/s41598-019-40050-6#:~:text=Herbarium%20XRF%20Ionomics%20can%20provide,range%20of%20different%20chemical%20elements.">X-Ray Fluorescence Ionomics of Herbarium Collections</a></p>
             </div>
           </div>
           <!-- .end .wrap -->
@@ -381,7 +387,7 @@
                 <p class="noMarginPadding"> Each element spectrum was estimated using GeoPIXE. Click on legend to hide or show</p>
             </div>
             <div class="slide-bottom">
-              <!-- <embed src="static/asset_images/xrf_energy.pdf" width="100%" height="400px" style="padding-top: 50px;"/> -->
+              <embed src="static/asset_images/xrf_energy.pdf" width="100%" height="400px" style="padding-top: 50px;"/>
               <a href="https://xdb.lbl.gov/Section1/Table_1-2.pdf">Source</a>
             </div>
           </div>
@@ -410,14 +416,14 @@
             <p>XRF is a bulk analysis method that captures not only XRF radiation emitted from the surface of a sample but also includes some XRF radiation originating from beneath the surface that manages to reach the detectors</p>
           
             <canvas id="escapedepthplot" width="400" height="200"></canvas>
-            <p> the depth of penetration: how far the X-ray from the instrument can penetrate the sample, and the escape depth: how far the XRF originated from an atom inside the sample can travel</p>
+            <p> The depth of penetration: how far the X-ray from the instrument can penetrate the sample, and the escape depth: how far the XRF originated from an atom inside the sample can travel</p>
           </div>
         </section>
 
         <section class="bg-apple slide-top">
           <div class="wrap">
             <p class="text-context"><strong>The thing is...</strong></p>
-            <h3>Most of the built-in algorithm assumes the sample we prepared is thicker that the escape depth of elements we are interested in...</h3>
+            <h3>Most of the built-in algorithm assumes the sample we prepared is thicker than the escape depth of elements we are interested in...</h3>
             <div class="grid vertical-align">
               <div class="column">
                 <canvas id="relativeKplot"></canvas>
@@ -427,7 +433,8 @@
               </div>
             </div>
             <div class="aligncenter">
-              <p>Red dots are synthetic samples with the same concentration but varying in thickness</p>
+              <p><b style='color:red;'>Red</b> dots are synthetic samples with abouot same concentration but varying in thickness</p>
+              <p>The <b style='color:white;'>white</b> lines are an empirical concentration reported by the instrument if the thickness is not corrected</p>
 
             </div>
           </div>
@@ -510,7 +517,7 @@
                 <pre>Y = mX + b<br>where:<br>Y is the response (dependent) variable<br>X is the predictor (independent) variable<br>m is the estimated slope<br>b is the estimated intercept<br>Three parameters are required to solve a simple regression model</pre>
                 <p></p> -->
                 <!-- <p>Dynamic analysis</p> -->
-                <p class="noMarginPadding">In case of monochromatic beam excitation (with energy <i>E<sub>0</sub></i>), the relation between the intensity of characteristic X-rays of element i (with energy <i>E<sub>i</sub></i>) and weight fraction of this element is:</p>
+                <p class="noMarginPadding">In case of <b style='color:red;'>monochromatic</b> beam excitation (with energy <i>E<sub>0</sub></i>), the relation between the intensity of characteristic X-rays of element i (with energy <i>E<sub>i</sub></i>) and weight fraction of this element is:</p>
                 <pre><i>I<sub>i</sub>(E<sub>i</sub>) = [G&epsilon;(E<sub>i</sub>)a<sub>i</sub>(E<sub>0</sub>)I<sub>0</sub>(E<sub>0</sub>)/sin&alpha;].{1-exp[-&rho;d(&mu;(E<sub>0</sub>)csc&alpha;+&mu;(E<sub>i</sub>)csc&beta;)]}/[&mu;(E<sub>0</sub>)csc&alpha; + &mu;(E<sub>i</sub>)csc&beta;]</i><br>With: <i>a<sub>i</sub> = W<sub>i</sub>&tau;<sub>i</sub>(E<sub>0</sub>)&omega;<sub>i</sub>p<sub>i</sub>(1 - 1/j<sub>i</sub>)</i><br>Where
                 <i>I<sub>i</sub>(E<sub>i</sub>)</i> – the intensity of the fluorescent radiation of the ith element,
                 G – the geometry factor,
@@ -526,7 +533,7 @@
                 p<sub>i</sub> – the transition probability of the kth line of the element i,
                 j<sub>i</sub> – the absorption jump at the K-edge of photoelectric absorption in ith element.
               </pre>
-                <h5>But, most, if not all of the available portable XRF instrument in the markets is polychromatic, how to solve it?</h5>
+                <h5>But, most, if not all of the available portable XRF instrument in the markets is <b style='color:red;'>polychromatic</b>, how to solve it?</h5>
               </div>
 
             </div>
@@ -539,16 +546,10 @@
             <div class="aligncenter">
               <h4>GeoPIXE</h4>
               <p>A software package developed by CSIRO using Dynamic Analysis for quantitative SXRF data</p>
-              <div class="content-left">
                 <img src="static/asset_images/geopixe.png" alt="Image Description" class="noMarginPadding" height="900">
                 <!-- <h3>Soil concentrations</h3>
                 <p>Wide spread nickel rich soils as the weathering product of ultramafic rocks</p> -->
-              </div>
               <!-- .end .content-left -->
-              <div class="content-left">
-                <pre>Parameters related to sample<br>- Density <br>- Thickness <br>- Chemical composition/formula</pre>
-                <pre>Parameters related to instrument<br>- X-ray source including: current, angle in, angle out, anode spot, filter thickness, filter density, filter formula <br>- Detector including material, diameter, distance to window, area, solid angle, resolution, tilt angle, shape, array, absorber layers</pre>
-              </div>
             </div>
           </div>
           <div class="wrap" style="padding-top: 20px;">
@@ -580,6 +581,48 @@
               </li>
 
             </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple aligncenter">
+
+          <div class="wrap" style="padding-top: 20px;">
+            <ul class="flexblock clients" style="flex-wrap: nowrap;">
+              <li class="chartComponent">
+                <h3>Input</h3>
+                <div class="inputFlowChart">
+                  Sample parameters
+                </div>
+                
+                <div class="inputFlowChart">
+                  Instrument parameters
+                </div>
+                
+              </li>
+              <li class="chartConnectingLine" style="background: white;"></li>
+              <li class="chartComponent" >
+                <h3>Process</h3>
+                <div class="inputFlowChart">
+                  GeoPIXE
+                </div>
+              </li>
+              <li class="chartConnectingLine" style="background: white;"></li>
+              <li class="chartComponent">
+                <h3>Output</h3>
+                <div class="inputFlowChart">
+                  Concentration
+                </div>
+              </li>
+
+            </ul>
+          </div>
+          <hr>
+          <div class="wrap">
+            <div class="aligncenter">
+                <pre>Sample parameters:<br>- Density <br>- Thickness <br>- Chemical composition/formula</pre>
+                <pre>Instrument parameters<br>- X-ray source including: current, angle in, angle out, anode spot, filter thickness, filter density, filter formula <br>- Detector including material, diameter, distance to window, area, solid angle, resolution, tilt angle, shape, array, absorber layers</pre>
+            </div>
           </div>
           <!-- .end .wrap -->
         </section>
@@ -631,6 +674,21 @@
             </h4>
             <p class="noMarginPadding">An illustration of herbarium XRF scanning: Observe titanium plate beneath herbarium specimen</p>
             <img src="static/asset_images/xrf_measurement_illustration.png" alt="Image Description" class="noMarginPadding" height="900">
+            <div class="lds-ripple box" style="z-index: 999; position: absolute;bottom: 0;right: 0;">
+              <p class="tooltip noMarginPadding" style="min-width: 300px;min-height: 40px;">
+                Safety: The X-ray coming out of the instrument is not fully absorbed herbarium and even the desk. Put metal plates under specimen to absorb the excessive x-ray.
+              </p>
+                <div style="border: 4px solid red;"></div>
+                <div style="border: 4px solid red;"></div>
+            </div>
+            <div class="lds-ripple box" style="z-index: 999; position: absolute;bottom: 75px;left: 0;">
+              <p class="tooltip noMarginPadding" style="min-width: 300px;min-height: 40px;">
+                Safety: A portion of the X-ray coming out of the instrument is scattered. Put backscatter shield on the instrument to absorb backscatter radiation.
+              </p>
+                <div style="border: 4px solid red;"></div>
+                <div style="border: 4px solid red;"></div>
+            </div>
+
           </div>
           <div class="wrap">
             <div class="content-left">
@@ -639,7 +697,8 @@
             </div>
             <!-- .end .content-left -->
             <div class="content-left">
-              <p class="noMarginPadding" style="font-size: 20px;">According to XXX, the XRF of Ti from Ti metal will emerge from herbarium sample depending on variation in density and thickness </p>
+              <p class="noMarginPadding" style="font-size: 20px;">According to <a href="https://www.intechopen.com/chapters/27342">Rafał Sitko and Beata Z, 2011</a>, emission-transmission can be used for determining matrix properties (&mu;m), without the knowledge of the sample composition.
+                </p>
               <pre><i>(I<sub>ts</sub> - I<sub>s</sub>)/I<sub>t</sub> = exp[-&mu;m]</i><br>Where:<br><i>I<sub>t</sub></i>: the Ti intensities from the Ti plate alone<br><i>I<sub>s</sub></i>: the Ti intensities from the sample<br><i>I<sub>ts</sub></i>: the Ti intensities the sample on top of the Ti plate<br>Ti concentration in leaves &lt; 34 &mu;g/g or even less (Cary and Kubota 1990; Tlustoš et al. 2011), thus not producing significant Ti fluorescence. So, equation can be simplified to:<br><i>I<sub>ts</sub> = I<sub>t</sub> exp[-&mu;m]</i></pre>
             </div>
             <!-- .end .wrap -->
@@ -707,7 +766,7 @@
           <div class="wrap">
             <div class="aligncenter">
               <h4>Reverse engineering</h4>
-              <p>Use certified materials during calibration to reverse engineering the instrument/p>
+              <p>Use certified materials during calibration to reverse engineering the instrument</p>
 
             </div>
           </div>
@@ -871,14 +930,14 @@
               <li class="resultChapter4">Zinc
                 <span>3</span>
               </li>   
-              <li class="resultChapter4">Rare Earth
+              <li class="resultChapter4" style="background: green;">Rare Earth
                 <span>2</span>
               </li>   
               <li class="resultChapter4">Selenium
                 <span>1</span>
               </li>         
             </ul>
-            <p>The two new REE hyperaccumulators were further confirmed by taking new samples from the field, subsequently measured using ICP-AES in <a href="https://link.springer.com/article/10.1007/s11104-022-05805-7">this study </a>.</p>
+            <p>The two new REE hyperaccumulators were further confirmed in <a href="https://link.springer.com/article/10.1007/s11104-022-05805-7">another study </a>by taking new samples from the field, subsequently measured using ICP-AES.</p>
 
           </div>
           <!-- .end .wrap -->
@@ -951,7 +1010,7 @@
           <div class="wrap">
               <div class="content-center">
                 <h2>Hyperaccumulators</h2>
-                <p>Plants exhibiting concentrations of at least an order of magnitude higher than that found in <b>normal</b> plants,</p>
+                <p>Plants exhibiting concentrations of at least an order of magnitude higher than that found in <b>normal</b> plants</p>
               </div>
             <ul class="flexblock metrics border">
               <li class="resultChapter4">Manganese
@@ -964,7 +1023,7 @@
                 <span>1000</span>µg/g
               </li>   
               <li class="resultChapter4">Copper
-                <span>300</span>
+                <span>300</span>µg/g
               </li>    
               <li class="resultChapter4">Zinc
                 <span>3000</span>µg/g
@@ -1062,7 +1121,7 @@
        
         <section class="bg-apple">
           <div class="wrap">
-            <h2 class="aligncenter">Below detection limits</h2>
+            <h2 class="aligncenter">N &lt; Below detection limits</h2>
             <p class="aligncenter">XRF has a high detection limit</p>
             <table>
               <thead>
@@ -1213,6 +1272,7 @@
 
               </tbody>
             </table>
+            <p>The historical hyperaccumulator thresholds are higher than this study results, so we suggested to not change the historical results because higher values mean safe from false positive</p>
           </div>
           <!-- .end .wrap -->
         </section>
@@ -1363,9 +1423,37 @@
 
         <section class="bg-black slide-top">
           <div class="wrap">
-            <h3>Chapter 7:<br>Reflectance spectroscopy as a promising tool for 'sensing' metals in hyperaccumulator plants</h3>
+            <h3>Chapter 7:<br><a href="https://link.springer.com/article/10.1007/s00425-023-04167-3">Reflectance spectroscopy as a promising tool for 'sensing' metals in hyperaccumulator plants</a></h3>
             <p>published in <a href="https://link.springer.com/article/10.1007/s00425-023-04167-3">Planta</a>, 2023</p>
             <p class="text-context text-intro">Exploring other possibilities</p>
+          </div>
+        </section>
+
+        <section class="bg-black">
+          <div class="wrap">
+            <div class="aligncenter">
+              <h4>
+                Benefits of remote sensing technique compared to herbarium XRF
+              </h4>
+              <hr>
+              <div class="content-left">
+                <p class="noMarginPadding">1. No X-ray radiation license needed</p>
+                <p class="noMarginPadding">2. Applicable from individual plant species to landscape-scale</p>
+                <p class="noMarginPadding">3. Capable of scanning inaccessible areas</p>
+              </div>
+              <!-- .end .content-left -->
+              <div class="content-left">
+                <img src="static/asset_images/can-we-sense-it.png" alt="Image Description" class="noMarginPadding" style="max-height: 600px;">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple aligncenter">
+          <div class="wrap">
+              <h4>How a leaf reflects light: A visual analysis?</h4>
+              <p>When sunlight shines on a leaf, a portion of this light is reflected.</p>
+              <img src="static/asset_images/reflectance-animation.gif" alt="Image Description" class="noMarginPadding" height="900" >
           </div>
         </section>
 
@@ -1457,6 +1545,7 @@
         <!-- Thank you -->
         <section class="bg-apple aligncenter">
           <h3><strong>Thank you!</strong></h2>
+            <hr>
             <span>
               Chariman: <a href="https://smi.uq.edu.au/profile/4672/nathan-fox" style="font-size: 24px;">Dr Nathan Fox</a>
             </span>
@@ -1481,10 +1570,18 @@
               <br>
               <a href="https://www.researchgate.net/profile/Vinod-Nath-2" style="font-size: 24px;">Mr Vinod Nath</a>
                 <br><a href="https://www.researchgate.net/profile/Vanessa-Glenn-2" style="font-size: 24px;">Ms Vanessa Glenn</a>
-                <br><a href="https://smi.uq.edu.au/profile/3428/natasha-ufer" style="font-size: 24px;">Natasha Ufer</a>
+                <br><a href="https://smi.uq.edu.au/profile/3428/natasha-ufer" style="font-size: 24px;">Ms Natasha Ufer</a>
               </a>
             </span>
-            
+            <hr>
+            <span>
+              Collaborators : <br>
+              <a href="https://www.researchgate.net/profile/Guillaume-Echevarria" style="font-size: 24px;">Prof Guillaume Echevarria</a>
+                 * <a href="https://www.researchgate.net/profile/Wojciech-Przybylowicz" style="font-size: 24px;">Dr Wojciech J Przybyłowicz</a>
+                 * <a href="https://www.researchgate.net/profile/Jolanta-Mesjasz-Przybylowicz" style="font-size: 24px;">Dr Jolanta Mesjasz-Przybyłowicz</a>
+                 * <a href="https://www.researchgate.net/profile/Chris-Ryan-5" style="font-size: 24px;">Dr Chris G. Ryan</a>
+                 * <a href="https://www.researchgate.net/profile/Gillian-Brown-8" style="font-size: 24px;">Dr Gillian Kim Brown</a>
+            </span>
             <hr>
             <span>
               The family of the Centre for Mined Land Rehabilitation at SMI : <br>
@@ -1498,14 +1595,8 @@
                  * <a href="https://www.researchgate.net/profile/Katherine-Pinto-Irish" style="font-size: 24px;">Katherine Pinto Irish</a>
             </span>
             <hr>
-            <span>
-              Collaborators : <br>
-              <a href="https://www.researchgate.net/profile/Guillaume-Echevarria" style="font-size: 24px;">Prof Guillaume Echevarria</a>
-                 * <a href="https://www.researchgate.net/profile/Wojciech-Przybylowicz" style="font-size: 24px;">Dr Wojciech J Przybyłowicz</a>
-                 * <a href="https://www.researchgate.net/profile/Jolanta-Mesjasz-Przybylowicz" style="font-size: 24px;">Dr Jolanta Mesjasz-Przybyłowicz</a>
-                 * <a href="https://www.researchgate.net/profile/Chris-Ryan-5" style="font-size: 24px;">Dr Chris G. Ryan</a>
-                 * <a href="https://www.researchgate.net/profile/Gillian-Brown-8" style="font-size: 24px;">Dr Gillian Kim Brown</a>
-            </span>
+            <span>All those who have been part of this journey. Your collective support and encouragement have been invaluable to me, and I am deeply grateful for each and every one of you</span>
+
           
             
              
