@@ -245,23 +245,15 @@
 
         <section class="bg-black">
           <div class="wrap">
-            <div class="content-left">
-              <h3>More background</h3>
-              <p class="noMarginPadding">> Hyperaccumulator coined for Pycnandra acuminata (Jaffré et al. 1976)</p>
-              <p class="noMarginPadding">> 721 identified hyperaccumulators (Reeves et al. 2017)</p>
-              <p class="noMarginPadding">> Hyperaccumulator thresholds:</p>
-              <p class="noMarginPadding">- 10,000 µg g<sup>-1</sup> for manganese,</p>
-              <p class="noMarginPadding">- 3000 µg g<sup>-1</sup> for zinc,</p>
-              <p class="noMarginPadding">- 1000 µg g<sup>-1</sup> for rare earth elements and arsenic,</p>
-              <p class="noMarginPadding">- 300 µg g<sup>-1</sup> for cobalt and copper,</p>
-              <p class="noMarginPadding">- 100 µg g<sup>-1</sup> selenium, cadmium, and thallium</p>
-              <p class="noMarginPadding">Source: <a href="https://www.researchgate.net/publication/247713966_Terrestrial_Higher_Plants_Which_Hyperaccumulate_Metallic_Elements_A_Review_of_Their_Distribution_E">Baker & Brooks, 1989</a>; 
-                <a href="https://link.springer.com/article/10.1023/A:1022572517197">Reeves, 2003b</a>;
-                <a href="https://link.springer.com/article/10.1007/s11104-012-1287-3">van der Ent et al., 2013</a></p>
-            </div>
-            <div class="content-left">
+            <div class="aligncenter">
               <div>
-                <canvas id="hyperaccumulatorDatabaseChart"></canvas>
+                <h3>Hyperaccumulators</h3>
+                <p class="noMarginPadding">Hyperaccumulator coined for <i>Pycnandra acuminata</i> (Jaffré et al. 1976)</p>
+                <p class="noMarginPadding">721 identified hyperaccumulators (Reeves et al. 2017)</p>
+                <br>
+                <div style="max-height: 500px;min-height: 300px; display: flex; justify-content: center;">
+                  <canvas id="hyperaccumulatorDatabaseChart"></canvas>
+                </div>
               </div>
             </div>
           </div>
@@ -405,7 +397,10 @@
         <section class="bg-apple aligncenter">
           <div class="wrap">
             <h5>Rare earth XRF peaks often observed but the instrument algorithm failed to report</h5>
-            <canvas id="reespectraplot" width="400" height="200"></canvas>
+            <hr>
+              <div style="max-height: 600px;min-height: 300px; display: flex; justify-content: center;">
+              <canvas id="reespectraplot" width="400" height="200"></canvas>
+              </div>
           </div>
         </section>
 
@@ -413,8 +408,10 @@
           <div class="wrap">
             <h5>Why it is important to understand the peak XRF radiation for each element?</h5>
             <p>XRF is a bulk analysis method that captures not only XRF radiation emitted from the surface of a sample but also includes some XRF radiation originating from beneath the surface that manages to reach the detectors</p>
-          
-            <canvas id="escapedepthplot" width="400" height="200"></canvas>
+            
+            <div style="max-height: 600px;min-height: 300px; display: flex; justify-content: center;">
+              <canvas id="escapedepthplot" width="400" height="200"></canvas>
+            </div>
             <p> The depth of penetration: how far the X-ray from the instrument can penetrate the sample, and the escape depth: how far the XRF originated from an atom inside the sample can travel</p>
           </div>
         </section>
@@ -432,7 +429,7 @@
               </div>
             </div>
             <div class="aligncenter">
-              <p><b style='color:red;'>Red</b> dots are synthetic samples with abouot same concentration but varying in thickness</p>
+              <p><b style='color:red;'>Red</b> dots are synthetic samples with about same concentration but varying in thickness</p>
               <p>The <b style='color:white;'>white</b> lines are an empirical concentration reported by the instrument if the thickness is not corrected</p>
 
             </div>
@@ -1025,32 +1022,36 @@
                 <h2>Hyperaccumulators</h2>
                 <p>Plants exhibiting concentrations of at least an order of magnitude higher than that found in <b>normal</b> plants</p>
               </div>
-            <ul class="flexblock metrics border">
-              <li class="resultChapter4">Manganese
-                <span>10000</span>µg/g
-              </li>
-              <li class="resultChapter4">Cobalt
-                <span>300</span>µg/g
-              </li>   
-              <li class="resultChapter4">Nickel
-                <span>1000</span>µg/g
-              </li>   
-              <li class="resultChapter4">Copper
-                <span>300</span>µg/g
-              </li>    
-              <li class="resultChapter4">Zinc
-                <span>3000</span>µg/g
-              </li>   
-              <li class="resultChapter4">Rare Earth
-                <span>1000</span>µg/g
-              </li>   
-              <li class="resultChapter4">Arsenic
-                <span>1000</span>µg/g
-              </li>         
-              <li class="resultChapter4">Selenium
-                <span>100</span>µg/g
-              </li>   
-            </ul>
+              <ul class="flexblock metrics border">
+                <li class="resultChapter4">Manganese
+                  <span>10000</span>µg/g
+                </li>
+                <li class="resultChapter4">Cobalt
+                  <span>300</span>µg/g
+                </li>   
+                <li class="resultChapter4">Nickel
+                  <span>1000</span>µg/g
+                </li>   
+                <li class="resultChapter4">Copper
+                  <span>300</span>µg/g
+                </li>    
+                <li class="resultChapter4">Zinc
+                  <span>3000</span>µg/g
+                </li>   
+                <li class="resultChapter4">Rare Earth
+                  <span>1000</span>µg/g
+                </li>   
+                <li class="resultChapter4">Arsenic
+                  <span>1000</span>µg/g
+                </li>         
+                <li class="resultChapter4">Selenium
+                  <span>100</span>µg/g
+                </li>   
+              </ul>
+              <p class="noMarginPadding">Source: <a href="https://www.researchgate.net/publication/247713966_Terrestrial_Higher_Plants_Which_Hyperaccumulate_Metallic_Elements_A_Review_of_Their_Distribution_E">Baker & Brooks, 1989</a>; 
+                <a href="https://link.springer.com/article/10.1023/A:1022572517197">Reeves, 2003b</a>;
+                <a href="https://link.springer.com/article/10.1007/s11104-012-1287-3">van der Ent et al., 2013</a>
+              </p>
           </div>
           <!-- .end .wrap -->
         </section>
@@ -1355,7 +1356,7 @@
                   <td>375.4 [32.5%]</td>
                   <td>36.8 [1.4%]</td>
                   <td>1484.3 [3.2%]</td>
-                  <td>3.1 [1.7%]</td>
+                  <td style="color: green;">3.1 [1.7%]</td>
                   <td>103.5 [7.7%]</td>
                 </tr>
                 <tr>
@@ -1365,7 +1366,7 @@
                   <td style="color: green;">270 [23.3%]</td>
                   <td style="color: green;">25.4 [0.9%]</td>
                   <td style="color: green;">636.5 [1.4%]</td>
-                  <td style="color: green;">3.4 [1.8%]</td>
+                  <td >3.4 [1.8%]</td>
                   <td style="color: green;">65 [4.9%]</td>
                 </tr>
                 <tr>

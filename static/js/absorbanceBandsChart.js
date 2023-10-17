@@ -62,6 +62,7 @@ function absorbanceBands (element){
             borderColor: peakColordata[0],
             borderWidth: 2,
             showLine: true,
+            hidden: true,
             fill: true
    }
 }
@@ -99,12 +100,6 @@ var data = {
         
     ]
 };
-// centers = [625]
-// def calculate(centers):
-//     wavelength = list(range(350, 2501))
-//     for c in centers:wavelength = [9999 if (w>c-10) and (w<c+10) else w for w in wavelength]
-//     wavelength = [1 if w == 9999 else 0 for w in wavelength]
-//     return wavelength
 
 // Create a chart
 var ctx_absorbanceBandsChart = document.getElementById('absorbanceBandsChart').getContext('2d');

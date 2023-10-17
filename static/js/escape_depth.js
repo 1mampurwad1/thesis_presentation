@@ -49,7 +49,9 @@ function create_escape_depth_chart(canvas_id){
         data: energy_kev,
         borderColor: 'rgba(255, 206, 86, 1)',
         backgroundColor: 'rgba(255, 206, 86, 0.2)',
-        yAxisID: 'y1'
+        yAxisID: 'y1',
+        hidden: true
+
     };
 
     var config = {
