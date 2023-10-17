@@ -1,5 +1,0 @@
- ("Vertosol", "Sodosol", "Dermosol",
-  "Chromosol","Ferrosol","Kurosol",
-  "Tenosol","Kandosol","Hydrosol",
-  "Podosol","Rudosol","Calcarasol",
-  "Organosol","Anthroposol")
