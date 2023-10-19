@@ -284,7 +284,6 @@
             style="width: 100vh;height: 100h;"
             >
             </div>
-            <!-- <img src="static/asset_images/dmg.gif" alt="Image Description" class="noMarginPadding" style="width: 100vh;"> -->
           </div>
           <!-- .end .wrap -->
         </section>
@@ -359,7 +358,6 @@
           <div class="wrap">
               <h4>How does a portable X-ray fluorescence instrument work?</h4>
               <p>The instrument shoots X-rays to hit the sample's atoms, and detectors catch any X-rays that come out</p>
-              <!-- <img src="static/asset_images/atomvsxray.gif" alt="Image Description" class="noMarginPadding" height="900" > -->
               <div data-youtube 
               data-youtube-id="OneyXZYooGY"
               data-mute
@@ -1631,34 +1629,6 @@
       </article>
     </main>
     <!--main-->
-    <footer>
-      <div class="wrap">
-      <div id="time-display" style="position: absolute; top: 0;left: 0;color: white;"></div>
-      </div>
-    </footer> 
-    <script>
-  // Function to update the time display
-  function updatePageTime() {
-        const timeDisplay = document.getElementById("time-display");
-        const startTime = new Date();
-        
-        function update() {
-            const currentTime = new Date();
-            const elapsedTime = new Date(currentTime - startTime);
-            const hours = String(elapsedTime.getUTCHours()).padStart(2, "0");
-            const minutes = String(elapsedTime.getUTCMinutes()).padStart(2, "0");
-            const seconds = String(elapsedTime.getUTCSeconds()).padStart(2, "0");
-            timeDisplay.textContent = hours + ":" + minutes + ":" + seconds;
-        }
-
-        // Update the time every second
-        update();
-        setInterval(update, 1000);
-    }
-
-    // Call the function to start tracking time when the page loads
-    window.addEventListener("load", updatePageTime);
-  </script>
     <!-- Required -->
     <script src="static/js/webslides.js"></script>
 
